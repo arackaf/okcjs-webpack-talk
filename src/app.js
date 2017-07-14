@@ -1,6 +1,3 @@
-//import Contacts from ;
-//import Tasks from './tasks/tasks';
-
 let contactsBtn = document.getElementById('contacts-btn'),
     tasksBtn = document.getElementById('tasks-btn');
 
