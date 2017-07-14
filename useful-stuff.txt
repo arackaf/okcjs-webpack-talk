@@ -1,0 +1,1 @@
+Run webpack from cli - webpack src/app.js dist/app-bundle.js
