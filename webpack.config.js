@@ -10,5 +10,12 @@ module.exports = {
         chunkFilename: '[name]-bundle.js',
         path: path.resolve(__dirname, 'dist'),
         publicPath: 'dist/'
-    }
+    },
+    plugins: [
+        new webpack.optimize.CommonsChunkPlugin({
+            name: 'app',
+            async: 'shared-stuff',
+            minChunks: 2
+        })
+    ]
 }
