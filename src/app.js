@@ -5,9 +5,9 @@ let contactsBtn = document.getElementById('contacts-btn'),
     tasksBtn = document.getElementById('tasks-btn');
 
 contactsBtn.addEventListener('click', () => {
-    import('./contacts/contacts').then(({default: Contacts}) => Contacts.doContactsThing())    
+    import('./contacts/contacts' /* webpackChunkName: 'contacts-module'*/ ).then(({default: Contacts}) => Contacts.doContactsThing())    
 });
 
 tasksBtn.addEventListener('click', () => {
-    import('./tasks/tasks').then(({default: Tasks}) => Tasks.doTasksThing())    
+    import('./tasks/tasks' /* webpackChunkName: 'tasks-module'*/).then(({default: Tasks}) => Tasks.doTasksThing())    
 });
