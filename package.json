@@ -17,6 +17,12 @@
   },
   "homepage": "https://github.com/arackaf/okcjs-webpack-talk#readme",
   "dependencies": {
-    "webpack": "3.3.0"
+    "babel-loader": "^7.1.1",
+    "babel-preset-es2015-webpack": "^6.4.3",
+    "babel-preset-stage-2": "^6.24.1",
+    "ts-loader": "^2.3.0",
+    "typescript": "^2.4.1",
+    "webpack": "3.3.0",
+    "webpack-bundle-analyzer": "^2.8.3"
   }
 }

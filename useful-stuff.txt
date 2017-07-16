@@ -4,3 +4,4 @@ webpack src/app.js dist/app-bundle.js
 Run webpack with code split stuff
 webpack --output-public-path=dist/ src/app.js dist/app-bundle.js
 
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin

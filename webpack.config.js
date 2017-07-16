@@ -1,5 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
 
 module.exports = {
     entry: {
@@ -12,6 +13,7 @@ module.exports = {
         publicPath: 'dist/'
     },
     plugins: [
+        new BundleAnalyzerPlugin({ analyzerMode: 'static' }),
         new webpack.optimize.CommonsChunkPlugin({
             name: 'app',
             async: 'shared-stuff',
