@@ -17,16 +17,28 @@ module.exports = {
     },
     module: {
         rules: [
-            { test: /\.tsx?$/, use: 'ts-loader', exclude: /node_modules/ },
+            { 
+                test: /\.tsx?$/, 
+                exclude: /node_modules/,
+                use: [
+                    {
+                        loader: 'babel-loader',
+                        options: {
+                            presets: [["es2015", { "modules": false }], 'stage-2']
+                        }
+                    },
+                    'ts-loader'
+                ]
+            },
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
-                use: {
+                use: [{
                     loader: 'babel-loader',
                     options: {
                         presets: [["es2015", { "modules": false }], 'stage-2']
                     }
-                }
+                }]
             }
         ]
     },
