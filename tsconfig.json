@@ -2,17 +2,14 @@
     "compilerOptions": {
         "target": "es5",
         "baseUrl": "./src",
-        "jsx": "react",
         "allowSyntheticDefaultImports": true,
         "allowJs": true,
         "moduleResolution": "node",
         "module": "es2015",
-        "experimentalDecorators": true,
         "lib": ["es2015", "dom"]
     },
     "include": [
-        ".src/**/*.ts",
-        ".src/**/*.tsx"
+        "./src/**/*.ts"
     ],
     "exclude": [
         "node_modules"

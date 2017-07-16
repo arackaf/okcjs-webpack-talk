@@ -6,6 +6,10 @@ webpack --output-public-path=dist/ src/app.js dist/app-bundle.js
 
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
 
+resolve: {
+    extensions: ['.ts', '.js']
+},
+
 module: {
     loaders: [{
         test: /\.js$/,
